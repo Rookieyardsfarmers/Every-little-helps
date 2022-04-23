@@ -1,0 +1,11 @@
+# ninja log v5
+0	930	6724229207080389	CMakeFiles/learncpp.dir/main.cpp.obj	f6e4f4bbf1d6984a
+946	1355	6724229211289138	learncpp.exe	d5cfdcc5c2c7d480
+3	596	6724234960462134	CMakeFiles/learncpp.dir/main.cpp.obj	f6e4f4bbf1d6984a
+596	1185	6724234966309454	learncpp.exe	d5cfdcc5c2c7d480
+3	648	6724235572921000	CMakeFiles/learncpp.dir/main.cpp.obj	f6e4f4bbf1d6984a
+648	780	6724235574636405	learncpp.exe	d5cfdcc5c2c7d480
+2	463	6724236019501488	CMakeFiles/learncpp.dir/main.cpp.obj	f6e4f4bbf1d6984a
+464	602	6724236020897749	learncpp.exe	d5cfdcc5c2c7d480
+2	823	6724247084907914	CMakeFiles/learncpp.dir/main.cpp.obj	f6e4f4bbf1d6984a
+823	1019	6724247086832481	learncpp.exe	d5cfdcc5c2c7d480
