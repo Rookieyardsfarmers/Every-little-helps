@@ -1,59 +1,19 @@
 #include <iostream>
+#include <vector>
+#include "method.h"
 
 using namespace std;
-struct free_throws{
-    string name;
-    int made;
-    int attempts;
-    float percent;
-};
-void display(const free_throws & ft);
-void set_pc(free_throws & ft);
-free_throws & accumulate(free_throws &  target, const free_throws & source);
-int main() {
-    free_throws one = {"one",13,14};
-    free_throws two = {"two",10,16};
-    free_throws three = {"three",0,0};
 
-    free_throws dup;
-    set_pc(one);
-    display(one);
-    accumulate(three,one);
-    display(three);
-    display(accumulate(three,two));
-    accumulate(accumulate(three,one),two);
-    display(three);
 
-    dup = accumulate(three,one);
-    cout<<"displaying dup:\n";
-    display(dup);
+int main(){
 
+    vector<int> nums = {2,7,11,15};
+    int target = 9;
+    auto result = twoSum(nums,target);
+    if (result.size()<=0)
+        cout<<"数组不存在两数之和为"<<target<<"的数；"<<endl;
+    else
+        cout<<"数组中两数之和为"<<target<<"的数的位置在"<<result[0]<<"-"<<
+            result[1]<<endl;
     return 0;
 }
-void display(const free_throws & ft){
-    cout<<"Name: "<<ft.name<<"\n";
-    cout<<"Made: "<<ft.made<<"\t";
-    cout<<"Attempts: "<<ft.attempts<<"\t";
-    cout<<"Percent: "<<ft.percent<<"\n";
-}
-void set_pc(free_throws & ft){
-    if (ft.attempts!=0)
-        ft.percent = 100.0f *float (ft.made)/float (ft.attempts);
-    else
-        ft.percent = 0;
-}
-
-free_throws & accumulate(free_throws & target, const free_throws & source){
-    target.attempts  += source.attempts;
-    target.made += source.made;
-    set_pc(target);
-    return target;
-}
-
-
-
-
-
-
-
-
